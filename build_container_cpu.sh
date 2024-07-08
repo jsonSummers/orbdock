@@ -25,6 +25,7 @@ docker run -td --privileged --net=host --ipc=host \
     -v "$(pwd)/Datasets:/Datasets" \
     -v /etc/group:/etc/group:ro \
     -v "$(pwd)/ORB_SLAM3:/ORB_SLAM3" \
+    -v "$(pwd)/study:/study" \  # Added volume mount for study folder
     jahaniam/orbslam3:ubuntu20_noetic_cpu bash
 
 # Git pull orbslam and compile (using HTTPS)
