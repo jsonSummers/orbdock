@@ -6,6 +6,8 @@ replace_files() {
     cp ./Modified_files/Map.cc ./ORB_SLAM3/src/Map.cc
     cp Modified_files/MapPoint.cc ORB_SLAM3/src/MapPoint.cc
     cp Modified_files/MapPoint.h ORB_SLAM3/include/MapPoint.h
+	cp ./Modified_files/Tracking.cc ./ORB_SLAM3/src/Tracking.cc
+	cp ./Modified_files/LoopClosing.cc ./ORB_SLAM3/src/LoopClosing.cc
 }
 
 
